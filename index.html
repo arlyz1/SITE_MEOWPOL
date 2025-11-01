@@ -12,7 +12,7 @@
   </head>
 
   <body class="min-w-[850px] font-sans bg-[#edf2f4] text-[#2b2d42] relative">
-    <!-- Верхний баннер -->
+    <!-- заголовок -->
     <header
       id="up"
       class="h-[30vh] bg-[#2b2d42] flex items-center justify-center animate-fade-in"
@@ -20,7 +20,7 @@
       <h1 class="text-[#edf2f4] font-extrabold text-8xl uppercase">МЯУпол</h1>
     </header>
 
-    <!-- Второй хедер -->
+    <!-- подзаголовок -->
     <header
       class="h-[100px] flex items-center justify-center bg-[#edf2f4] animate-fade-in"
     >
@@ -29,7 +29,7 @@
       </h1>
     </header>
 
-    <!-- Главное меню -->
+    <!-- навигация -->
     <nav class="bg-[#2b2d42] py-3 flex justify-center sticky top-0 z-50 shadow-md">
       <ul class="flex gap-5">
         <li>
@@ -70,7 +70,7 @@
       </ul>
     </nav>
 
-    <!-- Второе меню -->
+    <!-- секонд навигация -->
     <nav class="bg-[#2b2d42] py-2 flex justify-center mt-2 sticky top-[70px] z-40">
       <ul class="flex gap-6">
         <li>
@@ -104,7 +104,7 @@
       </ul>
     </nav>
 
-    <!-- Коты-преступники -->
+    <!-- преступники -->
     <section
       id="criminal"
       class="max-w-[1200px] mx-auto text-center my-12 px-4 animate-fade-in"
@@ -170,7 +170,7 @@
       </div>
     </section>
 
-    <!-- История -->
+    <!-- история -->
     <section id="history" class="bg-[#edf2f4] py-10 text-center animate-fade-in">
       <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-4">
         Зачем нужен отдел кот-контроля?
@@ -183,7 +183,7 @@
       </p>
     </section>
 
-    <!-- Штаб -->
+    <!-- штаб -->
     <section id="headquarters" class="py-10 text-center animate-fade-in">
       <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-6">
         Наша штаб-квартира
@@ -203,7 +203,7 @@
       </p>
     </section>
 
-    <!-- Кнопка наверх -->
+    <!-- кнопка наверх -->
     <button
       id="scrollTopBtn"
       onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
@@ -212,14 +212,17 @@
       ↑
     </button>
 
-    <!-- Подвал -->
-    <footer class="bg-[#2b2d42] text-[#edf2f4] py-6 text-center font-extrabold text-xl">
-      МЯУпол by arly & nmiiyyaa
-    </footer>
-    <footer class="bg-[#2b2d42] text-[#edf2f4] py-2 text-center">
-      Контактные данные:
-      <a href="https://t.me/arlyrll" target="_blank" class="underline">@arlyrll</a>
-    </footer>
+    <!-- контакные данные -->
+    <section id="communications" class="py-10 text-center animate-fade-in">
+      <footer class="bg-[#2b2d42] text-[#edf2f4] py-6 text-center font-extrabold text-xl">
+        МЯУпол by arly & nmiiyyaa
+      </footer>
+      <footer class="bg-[#2b2d42] text-[#edf2f4] py-2 text-center">
+        Контактные данные:
+        <a href="https://t.me/arlyrll" target="_blank" class="underline">@arlyrll</a>
+      </footer>
+    </section>
+      
 
     <!-- JS для кнопки наверх -->
     <script>
