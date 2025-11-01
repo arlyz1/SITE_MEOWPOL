@@ -1,118 +1,253 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Розыскно-информационный отдел "МЯУпол"</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_663f7076c9f50662e37ed70c_663f79051d849c75f28fa719/scale_1200" />
+    <link
+      rel="icon"
+      href="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_663f7076c9f50662e37ed70c_663f79051d849c75f28fa719/scale_1200"
+    />
   </head>
-  <body class="min-w-[850px] font-sans bg-[#edf2f4] text-[#2b2d42]">
-    
 
-    <header class="h-[30vh] bg-[#2b2d42] flex items-center justify-center">
-      <h1 id="up" class="text-[#edf2f4] font-extrabold text-8xl uppercase">МЯУпол</h1>
+  <body class="min-w-[850px] font-sans bg-[#edf2f4] text-[#2b2d42] relative">
+    <!-- Верхний баннер -->
+    <header
+      id="up"
+      class="h-[30vh] bg-[#2b2d42] flex items-center justify-center animate-fade-in"
+    >
+      <h1 class="text-[#edf2f4] font-extrabold text-8xl uppercase">МЯУпол</h1>
     </header>
 
-    <header class="h-[100px] flex items-center justify-center bg-[#edf2f4]">
-      <h1 class="text-[#ef233c] font-extrabold text-2xl uppercase">Поймаем за хвост любого нарушителя!</h1>
+    <!-- Второй хедер -->
+    <header
+      class="h-[100px] flex items-center justify-center bg-[#edf2f4] animate-fade-in"
+    >
+      <h1 class="text-[#ef233c] font-extrabold text-2xl uppercase">
+        Поймаем за хвост любого нарушителя!
+      </h1>
     </header>
 
-
-    <nav class="bg-[#2b2d42] py-3 flex justify-center">
+    <!-- Главное меню -->
+    <nav class="bg-[#2b2d42] py-3 flex justify-center sticky top-0 z-50 shadow-md">
       <ul class="flex gap-5">
-        <li><a href="#header" class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition">Главная</a></li>
-        <li><a href="index2.html" class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition">Отдел кот-контроля</a></li>
-        <li><a href="index3.html" class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition">Поместится ли преступник в камеру?</a></li>
-        <li><a href="passport.html" class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition">Данные оперативников</a></li>
-        <li><a href="index4.html" class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition">Передать информацию</a></li>
+        <li>
+          <a
+            href="#up"
+            class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition"
+            >Главная</a
+          >
+        </li>
+        <li>
+          <a
+            href="index2.html"
+            class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition"
+            >Отдел кот-контроля</a
+          >
+        </li>
+        <li>
+          <a
+            href="index3.html"
+            class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition"
+            >Поместится ли преступник в камеру?</a
+          >
+        </li>
+        <li>
+          <a
+            href="passport.html"
+            class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition"
+            >Данные оперативников</a
+          >
+        </li>
+        <li>
+          <a
+            href="index4.html"
+            class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition"
+            >Передать информацию</a
+          >
+        </li>
       </ul>
     </nav>
 
-
-    <nav class="bg-[#2b2d42] py-2 flex justify-center mt-2">
+    <!-- Второе меню -->
+    <nav class="bg-[#2b2d42] py-2 flex justify-center mt-2 sticky top-[70px] z-40">
       <ul class="flex gap-6">
-        <li><a href="#criminal" class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition">В розыске</a></li>
-        <li><a href="#history" class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition">Зачем нужен МЯУпол</a></li>
-        <li><a href="#headquarters" class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition">Наша штаб-квартира</a></li>
-        <li><a href="#communication" class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition">Контактные данные</a></li>
+        <li>
+          <a
+            href="#criminal"
+            class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition"
+            >В розыске</a
+          >
+        </li>
+        <li>
+          <a
+            href="#history"
+            class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition"
+            >Зачем нужен МЯУпол</a
+          >
+        </li>
+        <li>
+          <a
+            href="#headquarters"
+            class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition"
+            >Наша штаб-квартира</a
+          >
+        </li>
+        <li>
+          <a
+            href="#communication"
+            class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition"
+            >Контактные данные</a
+          >
+        </li>
       </ul>
     </nav>
 
-
-    <section id="criminal" class="max-w-[1200px] mx-auto text-center my-12 px-4">
-      <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-8">Коты-преступники в розыске</h3>
+    <!-- Коты-преступники -->
+    <section
+      id="criminal"
+      class="max-w-[1200px] mx-auto text-center my-12 px-4 animate-fade-in"
+    >
+      <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-8">
+        Коты-преступники в розыске
+      </h3>
 
       <div class="flex flex-wrap justify-center gap-6">
-        
-        <div class="bg-white border-2 border-[#2b2d42] rounded-xl p-5 w-[360px]">
-          <img class="w-full h-[200px] object-cover border-2 border-[#2b2d42] rounded-xl mb-4"
-               src="https://static39.tgcnt.ru/posts/_0/5b/5be76e08db3280614622835ec589b281.jpg"
-               alt="Барсик Рецидивист">
-          <h3 class="text-[#ef233c] font-extrabold text-xl uppercase mb-2">Барсик "Рецидивист"</h3>
+        <div
+          class="bg-white border-2 border-[#2b2d42] rounded-xl p-5 w-[360px] hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            class="w-full h-[200px] object-cover border-2 border-[#2b2d42] rounded-xl mb-4"
+            src="https://static39.tgcnt.ru/posts/_0/5b/5be76e08db3280614622835ec589b281.jpg"
+            alt="Барсик Рецидивист"
+          />
+          <h3 class="text-[#ef233c] font-extrabold text-xl uppercase mb-2">
+            Барсик "Рецидивист"
+          </h3>
           <p class="text-left leading-relaxed">
-            <strong>Преступления:</strong> Кража сосисок, опрокидывание цветочных горшков<br>
-            <strong>Особые приметы:</strong> Рыжий окрас, пушистый хвост, хитрющие глаза<br>
+            <strong>Преступления:</strong> Кража сосисок, опрокидывание цветочных горшков<br />
+            <strong>Особые приметы:</strong> Рыжий окрас, пушистый хвост, хитрющие глаза<br />
             <strong>Статус:</strong> В розыске
           </p>
         </div>
 
-        <div class="bg-white border-2 border-[#2b2d42] rounded-xl p-5 w-[360px]">
-          <img class="w-full h-[200px] object-cover border-2 border-[#2b2d42] rounded-xl mb-4"
-               src="https://i.pinimg.com/736x/cb/7f/f4/cb7ff41eb5af5ef1b5fe6d08bbb01833.jpg"
-               alt="Мурзик Bad Cat">
-          <h3 class="text-[#ef233c] font-extrabold text-xl uppercase mb-2">Мурзик "Bad Cat"</h3>
+        <div
+          class="bg-white border-2 border-[#2b2d42] rounded-xl p-5 w-[360px] hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            class="w-full h-[200px] object-cover border-2 border-[#2b2d42] rounded-xl mb-4"
+            src="https://i.pinimg.com/736x/cb/7f/f4/cb7ff41eb5af5ef1b5fe6d08bbb01833.jpg"
+            alt="Мурзик Bad Cat"
+          />
+          <h3 class="text-[#ef233c] font-extrabold text-xl uppercase mb-2">
+            Мурзик "Bad Cat"
+          </h3>
           <p class="text-left leading-relaxed">
-            <strong>Преступления:</strong> Разбитие ваз, ночные концерты в 3 часа ночи<br>
-            <strong>Особые приметы:</strong> Черно-белый окрас, громкий голос<br>
+            <strong>Преступления:</strong> Разбитие ваз, ночные концерты в 3 часа ночи<br />
+            <strong>Особые приметы:</strong> Черно-белый окрас, громкий голос<br />
             <strong>Статус:</strong> Особо опасен
           </p>
         </div>
 
-        <div class="bg-white border-2 border-[#2b2d42] rounded-xl p-5 w-[360px]">
-          <img class="w-full h-[200px] object-cover border-2 border-[#2b2d42] rounded-xl mb-4"
-               src="https://funny.klev.club/uploads/posts/2024-03/funny-klev-club-p-smeshnie-kartinki-s-tablichkami-13.jpg"
-               alt="Васька Якудза">
-          <h3 class="text-[#ef233c] font-extrabold text-xl uppercase mb-2">Васька "Якудза"</h3>
+        <div
+          class="bg-white border-2 border-[#2b2d42] rounded-xl p-5 w-[360px] hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            class="w-full h-[200px] object-cover border-2 border-[#2b2d42] rounded-xl mb-4"
+            src="https://funny.klev.club/uploads/posts/2024-03/funny-klev-club-p-smeshnie-kartinki-s-tablichkami-13.jpg"
+            alt="Васька Якудза"
+          />
+          <h3 class="text-[#ef233c] font-extrabold text-xl uppercase mb-2">
+            Васька "Якудза"
+          </h3>
           <p class="text-left leading-relaxed">
-            <strong>Преступления:</strong> Порча мебели, нападение на ноги из-под кровати<br>
-            <strong>Особые приметы:</strong> Рыжий окрас, острые когти, мурлыкает на японском<br>
+            <strong>Преступления:</strong> Порча мебели, нападение на ноги из-под кровати<br />
+            <strong>Особые приметы:</strong> Рыжий окрас, острые когти, мурлыкает на японском<br />
             <strong>Статус:</strong> Задержан, находится под стражей
           </p>
         </div>
       </div>
     </section>
 
-    <section id="history" class="bg-[#edf2f4] py-10 text-center">
-      <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-4">Зачем нужен отдел кот-контроля?</h3>
+    <!-- История -->
+    <section id="history" class="bg-[#edf2f4] py-10 text-center animate-fade-in">
+      <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-4">
+        Зачем нужен отдел кот-контроля?
+      </h3>
       <p class="max-w-3xl mx-auto font-semibold leading-relaxed">
-        МЯУпол был создан в ответ на участившиеся случаи кошачьего беспредела. 
-        Отдел специализируется на розыске хвостатых преступников, нарушающих покой граждан. 
-        Наши оперативники работают круглосуточно, чтобы вернуть украденные сосиски и найти виновных в порче мебели. 
-        Каждое раскрытое дело — это шаг к восстановлению порядка в мире людей и котов!
+        МЯУпол был создан в ответ на участившиеся случаи кошачьего беспредела. Отдел
+        специализируется на розыске хвостатых преступников, нарушающих покой граждан. Наши
+        оперативники работают круглосуточно, чтобы вернуть украденные сосиски и найти виновных в
+        порче мебели. Каждое раскрытое дело — это шаг к восстановлению порядка в мире людей и котов!
       </p>
     </section>
 
-    <section id="headquarters" class="py-10 text-center">
-      <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-6">Наша штаб-квартира</h3>
-      <a href="https://youtu.be/um0ETkJABmI?si=dw_H9uxHzOBtfJQt&t=2" target="_blank">
-        <img src="https://avatars.mds.yandex.net/get-shedevrum/14584512/img_5b9013f5b2c311efb09e2a787e8844a7/orig"
-             class="w-[60%] max-w-[500px] mx-auto border-2 border-[#2b2d42] rounded-xl">
+    <!-- Штаб -->
+    <section id="headquarters" class="py-10 text-center animate-fade-in">
+      <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-6">
+        Наша штаб-квартира
+      </h3>
+      <a
+        href="https://youtu.be/um0ETkJABmI?si=dw_H9uxHzOBtfJQt&t=2"
+        target="_blank"
+        class="inline-block"
+      >
+        <img
+          src="https://avatars.mds.yandex.net/get-shedevrum/14584512/img_5b9013f5b2c311efb09e2a787e8844a7/orig"
+          class="w-[60%] max-w-[500px] mx-auto border-2 border-[#2b2d42] rounded-xl hover:scale-105 transition-transform duration-300"
+        />
       </a>
-      <p class="italic mt-4">Нажми на офис чтобы посмотреть видео о нашей работе!</p>
+      <p class="italic mt-4">
+        Нажми на офис чтобы посмотреть видео о нашей работе!
+      </p>
     </section>
 
-    <div class="text-center my-10">
-      <a href="#up" class="text-[#2b2d42] border-2 border-[#2b2d42] px-5 py-2 rounded-md uppercase hover:bg-[#8d99ae] transition">⇧ Наверх ⇧</a>
-    </div>
+    <!-- Кнопка наверх -->
+    <button
+      id="scrollTopBtn"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="fixed bottom-5 right-5 bg-[#ef233c] text-white p-3 rounded-full shadow-lg hover:bg-[#d90429] transition-opacity duration-300 opacity-0 pointer-events-none"
+    >
+      ↑
+    </button>
 
+    <!-- Подвал -->
     <footer class="bg-[#2b2d42] text-[#edf2f4] py-6 text-center font-extrabold text-xl">
       МЯУпол by arly & nmiiyyaa
     </footer>
-
     <footer class="bg-[#2b2d42] text-[#edf2f4] py-2 text-center">
-      Контактные данные: <a href="https://t.me/arlyrll" target="_blank" class="underline">@arlyrll</a>
+      Контактные данные:
+      <a href="https://t.me/arlyrll" target="_blank" class="underline">@arlyrll</a>
     </footer>
 
+    <!-- JS для кнопки наверх -->
+    <script>
+      const scrollBtn = document.getElementById("scrollTopBtn");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollBtn.classList.remove("opacity-0", "pointer-events-none");
+        } else {
+          scrollBtn.classList.add("opacity-0", "pointer-events-none");
+        }
+      });
+    </script>
+
+    <!-- Анимация Tailwind (fade-in) -->
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in {
+        animation: fadeIn 1s ease-out both;
+      }
+    </style>
   </body>
 </html>
