@@ -4,124 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Розыскно-информационный отдел "МЯУпол"</title>
-    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_663f7076c9f50662e37ed70c_663f79051d849c75f28fa719/scale_1200" />
   </head>
-  <body>
-    <header id="header" class="header">
-      <div class="overlay">
-        <h1 id="up" class="header-title">МЯУпол</h1>
-      </div>
-    </header>
+  <body class="min-w-[850px] font-sans bg-[#edf2f4] text-[#2b2d42]">
     
-    <header class="second-header"> 
-        <div class="second-overlay">
-            <h1 class="second-header-title">Поймаем за хвост любого нарушителя!</h1>
+
+    <header class="h-[30vh] bg-[#2b2d42] flex items-center justify-center">
+      <h1 id="up" class="text-[#edf2f4] font-extrabold text-8xl uppercase">МЯУпол</h1>
+    </header>
+
+    <header class="h-[100px] flex items-center justify-center bg-[#edf2f4]">
+      <h1 class="text-[#ef233c] font-extrabold text-2xl uppercase">Поймаем за хвост любого нарушителя!</h1>
+    </header>
+
+
+    <nav class="bg-[#2b2d42] py-3 flex justify-center">
+      <ul class="flex gap-5">
+        <li><a href="#header" class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition">Главная</a></li>
+        <li><a href="index2.html" class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition">Отдел кот-контроля</a></li>
+        <li><a href="index3.html" class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition">Поместится ли преступник в камеру?</a></li>
+        <li><a href="passport.html" class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition">Данные оперативников</a></li>
+        <li><a href="index4.html" class="text-[#edf2f4] font-semibold text-lg px-4 py-2 rounded hover:bg-[#8d99ae] transition">Передать информацию</a></li>
+      </ul>
+    </nav>
+
+
+    <nav class="bg-[#2b2d42] py-2 flex justify-center mt-2">
+      <ul class="flex gap-6">
+        <li><a href="#criminal" class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition">В розыске</a></li>
+        <li><a href="#history" class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition">Зачем нужен МЯУпол</a></li>
+        <li><a href="#headquarters" class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition">Наша штаб-квартира</a></li>
+        <li><a href="#communication" class="text-[#edf2f4] font-semibold text-lg hover:text-[#ef233c] transition">Контактные данные</a></li>
+      </ul>
+    </nav>
+
+
+    <section id="criminal" class="max-w-[1200px] mx-auto text-center my-12 px-4">
+      <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-8">Коты-преступники в розыске</h3>
+
+      <div class="flex flex-wrap justify-center gap-6">
+        
+        <div class="bg-white border-2 border-[#2b2d42] rounded-xl p-5 w-[360px]">
+          <img class="w-full h-[200px] object-cover border-2 border-[#2b2d42] rounded-xl mb-4"
+               src="https://static39.tgcnt.ru/posts/_0/5b/5be76e08db3280614622835ec589b281.jpg"
+               alt="Барсик Рецидивист">
+          <h3 class="text-[#ef233c] font-extrabold text-xl uppercase mb-2">Барсик "Рецидивист"</h3>
+          <p class="text-left leading-relaxed">
+            <strong>Преступления:</strong> Кража сосисок, опрокидывание цветочных горшков<br>
+            <strong>Особые приметы:</strong> Рыжий окрас, пушистый хвост, хитрющие глаза<br>
+            <strong>Статус:</strong> В розыске
+          </p>
         </div>
-    </header>
-    
-    <header class="navigation"> 
-        <nav> 
-            <ul>
-                <li><a href="index.html#header" target="_self"><u>Главная</u></a></li>
-                <li><a href="index2.html">Отдел кот-контроля</a></li>
-                <li><a href="index3.html">Поместится ли преступник в камеру?</a></li>
-                <li><a href="passport.html">Данные оперативников</a></li>
-                <li><a href="index4.html">Передать информацию</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <header class="page-navigation">
-      <nav>
-        <ul>
-          <li><a href='#criminal'>В розыске</a></li>
-          <li><a href='#history'>Зачем нужен МЯУпол</a></li>
-          <li><a href='#headquarters'>Наша штаб-квартира</a></li>
-          <li><a href='#communication'>Контактные данные</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <section class="content" id="criminal">
-      <h3 class="card-title"> КОТЫ-ПРЕСТУПНИКИ В РОЗЫСКЕ</h3>
-      
-      <div class="card">
-        <img
-          class="card-image"
-          src="https://static39.tgcnt.ru/posts/_0/5b/5be76e08db3280614622835ec589b281.jpg"
-          alt="Рыжий кот Барсик с хитрой улыбкой"
-        />
-        <h3 class="card-title">Барсик "Рецидивист"</h3>
-        <p class="card-text">
-          <strong>Преступления:</strong> Кража сосисок, опрокидывание цветочных горшков<br>
-          <strong>Особые приметы:</strong> Рыжий окрас, пушистый хвост, хитрющие глаза<br>
-          <strong>Статус:</strong> В розыске
-        </p>
-      </div>
+        <div class="bg-white border-2 border-[#2b2d42] rounded-xl p-5 w-[360px]">
+          <img class="w-full h-[200px] object-cover border-2 border-[#2b2d42] rounded-xl mb-4"
+               src="https://i.pinimg.com/736x/cb/7f/f4/cb7ff41eb5af5ef1b5fe6d08bbb01833.jpg"
+               alt="Мурзик Bad Cat">
+          <h3 class="text-[#ef233c] font-extrabold text-xl uppercase mb-2">Мурзик "Bad Cat"</h3>
+          <p class="text-left leading-relaxed">
+            <strong>Преступления:</strong> Разбитие ваз, ночные концерты в 3 часа ночи<br>
+            <strong>Особые приметы:</strong> Черно-белый окрас, громкий голос<br>
+            <strong>Статус:</strong> Особо опасен
+          </p>
+        </div>
 
-      <div class="card">
-        <img
-          class="card-image"
-          src="https://i.pinimg.com/736x/cb/7f/f4/cb7ff41eb5af5ef1b5fe6d08bbb01833.jpg"
-          alt="Черно-белый кот Мурзик с кликухой Bad Cat"
-        />
-        <h3 class="card-title">Мурзик "Bad Cat"</h3>
-        <p class="card-text">
-          <strong>Преступления:</strong> Разбитие ваз, ночные концерты в 3 часа ночи<br>
-          <strong>Особые приметы:</strong> Черно-белый окрас, громкий голос<br>
-          <strong>Статус:</strong> Особо опасен
-        </p>
-      </div>
-
-      <div class="card">
-        <img
-          class="card-image"
-          src="https://funny.klev.club/uploads/posts/2024-03/funny-klev-club-p-smeshnie-kartinki-s-tablichkami-13.jpg"
-          alt="Рыжий кот Васька"
-        />
-        <h3 class="card-title">Васька "Якудза"</h3>
-        <p class="card-text">
-          <strong>Преступления:</strong> Порча мебели, нападение на ноги из-под кровати<br>
-          <strong>Особые приметы:</strong> Рыжий окрас, острые когти, мурлыкает на японском<br>
-          <strong>Статус:</strong> Задержан, находится под стражей
-        </p>
+        <div class="bg-white border-2 border-[#2b2d42] rounded-xl p-5 w-[360px]">
+          <img class="w-full h-[200px] object-cover border-2 border-[#2b2d42] rounded-xl mb-4"
+               src="https://funny.klev.club/uploads/posts/2024-03/funny-klev-club-p-smeshnie-kartinki-s-tablichkami-13.jpg"
+               alt="Васька Якудза">
+          <h3 class="text-[#ef233c] font-extrabold text-xl uppercase mb-2">Васька "Якудза"</h3>
+          <p class="text-left leading-relaxed">
+            <strong>Преступления:</strong> Порча мебели, нападение на ноги из-под кровати<br>
+            <strong>Особые приметы:</strong> Рыжий окрас, острые когти, мурлыкает на японском<br>
+            <strong>Статус:</strong> Задержан, находится под стражей
+          </p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <div class="page-frame" id="history">
-        <h3 class="card-title">ЗАЧЕМ НУЖЕН ОТДЕЛ КОТ-КОНТРОЛЯ?</h3>
-        <p class="page-text">МЯУпол был создан в ответ на участившиеся случаи кошачьего беспредела. 
-          Отдел специализируется на розыске хвостатых преступников, нарушающих покой граждан. 
-          Наши оперативники работают круглосуточно, чтобы вернуть украденные сосиски и найти виновных в порче мебели. 
-          Каждое раскрытое дело - это шаг к восстановлению порядка в мире людей и котов!</p>
-      </div>
-
-      <div class="page-frame" id="headquarters">
-            <h3 class="card-title">НАША ШТАБ-КВАРТИРА</h3>
-            <a href="https://youtu.be/um0ETkJABmI?si=dw_H9uxHzOBtfJQt&t=2" target="_blank">
-               <img class="card-image" src="https://avatars.mds.yandex.net/get-shedevrum/14584512/img_5b9013f5b2c311efb09e2a787e8844a7/orig" 
-                     style="width: 60%; max-width: 500px; height: auto; display: block; margin: 0 auto; border: 2px solid #333; border-radius: 10px;">
-            </a>
-            <p style="text-align: center; margin-top: 10px; font-style: italic;">
-                Нажми на офис чтобы посмотреть видео о нашей работе!
-            </p>
-        </div>
+    <section id="history" class="bg-[#edf2f4] py-10 text-center">
+      <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-4">Зачем нужен отдел кот-контроля?</h3>
+      <p class="max-w-3xl mx-auto font-semibold leading-relaxed">
+        МЯУпол был создан в ответ на участившиеся случаи кошачьего беспредела. 
+        Отдел специализируется на розыске хвостатых преступников, нарушающих покой граждан. 
+        Наши оперативники работают круглосуточно, чтобы вернуть украденные сосиски и найти виновных в порче мебели. 
+        Каждое раскрытое дело — это шаг к восстановлению порядка в мире людей и котов!
+      </p>
     </section>
 
-    <div class="up"> 
-      <h5 class="up-text"><a href="#up">⇧ Наверх ⇧</a></h5>
+    <section id="headquarters" class="py-10 text-center">
+      <h3 class="text-[#ef233c] font-extrabold text-2xl uppercase mb-6">Наша штаб-квартира</h3>
+      <a href="https://youtu.be/um0ETkJABmI?si=dw_H9uxHzOBtfJQt&t=2" target="_blank">
+        <img src="https://avatars.mds.yandex.net/get-shedevrum/14584512/img_5b9013f5b2c311efb09e2a787e8844a7/orig"
+             class="w-[60%] max-w-[500px] mx-auto border-2 border-[#2b2d42] rounded-xl">
+      </a>
+      <p class="italic mt-4">Нажми на офис чтобы посмотреть видео о нашей работе!</p>
+    </section>
+
+    <div class="text-center my-10">
+      <a href="#up" class="text-[#2b2d42] border-2 border-[#2b2d42] px-5 py-2 rounded-md uppercase hover:bg-[#8d99ae] transition">⇧ Наверх ⇧</a>
     </div>
 
-    <footer class="footer" id="communication">
-      <h4 class="footer-author">
-        МЯУпол by arly & nmiiyyaa
-      </h4>
+    <footer class="bg-[#2b2d42] text-[#edf2f4] py-6 text-center font-extrabold text-xl">
+      МЯУпол by arly & nmiiyyaa
     </footer>
-    
-    <footer class="minifooter">
-      <h4 class="footer-communication">Контактные данные: <a href="https://t.me/arlyrll" target="_blank">@arlyrll</a></h4>
+
+    <footer class="bg-[#2b2d42] text-[#edf2f4] py-2 text-center">
+      Контактные данные: <a href="https://t.me/arlyrll" target="_blank" class="underline">@arlyrll</a>
     </footer>
+
   </body>
 </html>
